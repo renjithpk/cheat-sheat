@@ -42,7 +42,7 @@ val names = setOf("john",null,"renjith", "john")
 ### map
 ```kotlin
 // fun <K, V> mapOf(vararg pairs: Pair<K, V>): Map<K, V>
-val student = mutableMapOf<String,String>("name" to "renjith","class" to "10")
+val student: MutableMap<String,String> = mutableMapOf<String,String>("name" to "renjith","class" to "10")
 student.put("rollno","10")
 student["division"] = "A"
 ```
