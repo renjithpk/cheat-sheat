@@ -5,7 +5,12 @@
 fun call(block: (String) -> Unit) {
   block('renjith')
 }
+// normal way of invoking
+call({ name ->
+   println(name)
+})
 
+// when code block is last argument we need not pass "()"
 call { name ->
    println(name)
 }
@@ -28,7 +33,7 @@ fun call(block: String.(String) -> Unit) {
   "hello".block("$name") 
 }
 
-// when code block is last argument we need not call like call({ print(this)})
+
 call { name ->
    print(this, name) // this will print hello renjith
 }
